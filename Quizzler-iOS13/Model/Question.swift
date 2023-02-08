@@ -10,11 +10,13 @@ import Foundation
 
 struct Question {
     let text: String
-    let answer: String
+    let answer: [String]
+    let correctAnswer: String
     
     // Пользовательский инит для сокращения названий констант в одну букву для быстрой скорости
-    init(q: String, a: String) {
+    init(q: String, a: [String], correctAnswer: String) {
         text = q
         answer = a
+        self.correctAnswer = correctAnswer
     }
 }
